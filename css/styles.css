@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/apps.63170.14246812968525544.2de1e6fd-94a7-4291-88ea-6803f279b4ed.jpg');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333333;
+}
+
+/* Estilos para encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Estilos para contenido principal */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Estilos para formulario de busqueda */
+#search-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el campo de entrada de texto del formulario */
+#game-title {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilos para boton de busqueda */
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo para el boton de busqueda al pasar el cursor */
+button:hover {
+    background-color: #555;
+}
+
+/* Estilos para el contenedor de resultados */
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0.5rem;
+}
+
+/* Estilos para cada tarjeta de oferta individual */
+.deal {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilos para la imagen dentro de una tarjeta de oferta */
+.deal img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1px;
+}
+
+/* Estilos para el título del juego en la tarjeta */
+.deal h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+/* Estilos para el listado de precio en la tarjeta*/
+.deal p {
+    margin: 0;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Estilos para lista de tiendas quitando marcadores */
+.deal ul {
+    list-style-type: none; 
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.deal li {
+    margin-bottom: 0.25rem; /* Agrega un pequeño espacio entre los nombres de las tiendas */
+}
