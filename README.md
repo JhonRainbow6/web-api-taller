@@ -10,20 +10,23 @@ La API de CheapShark es una API pública que proporciona datos sobre los precios
 Esta API nos permite integrar los datos sobre precios de CheapShark en sus propias aplicaciones o sitios web sin necesidad de autorización ni claves API de cada tienda.
 
 **HERRAMIENTAS NECESARIAS PARA VER EL PROYECTO**
-
+<p align="center">
 <img width="474" height="243" alt="image" src="https://github.com/user-attachments/assets/64f521e9-307e-4433-8c81-acad0a62d55a" />
+</p>
 
 VS CODE Editor de codigo para ver la documentacion del codigo mas en detalle.
 
-
+<p align="center">
 <img width="689" height="142" alt="image" src="https://github.com/user-attachments/assets/5c2f46cf-7f3f-4ce5-abe8-2a028797eba4" />
+</p>
 
 LIVE SERVER una extension para correr un servidor local en la maquina. 
 
 
 **COMO VISUALIZAR**
-
+<p align="center">
 <img width="341" height="22" alt="Captura de pantalla 2025-08-12 131051" src="https://github.com/user-attachments/assets/33a32e00-d5fb-4ae3-b07e-c25a36a00ab2" />
+</p>
 
 En la parte inferior derecha del VS CODE aparecera una opcion llamada "Go Live" la cual se vera disponible despues de la instalacion la extencion anteriormente mencionada.
 
