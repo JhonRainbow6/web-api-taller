@@ -8,12 +8,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #333333;
+    color: #000000;
 }
 
 /* Estilos para encabezado */
 header {
-    background-color: #333;
+    background-color: #464444;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -55,6 +55,20 @@ button:hover {
     background-color: #555;
 }
 
+/* Estilo para el mensaje de carga */
+.loading-message {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+    grid-column: 1 / -1; /* Hace que ocupe todas las columnas del grid */
+}
+.no-found-message{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+    grid-column: 1 / -1; /* Hace que ocupe todas las columnas del grid */
+}
+
 /* Estilos para el contenedor de resultados */
 #results {
     display: grid;
@@ -64,11 +78,18 @@ button:hover {
 
 /* Estilos para cada tarjeta de oferta individual */
 .deal {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    background: linear-gradient(145deg, #fdfdfd, #f1f1f1); /* Gradiente sutil para dar textura */
+    border: 1px solid #e1e1e1;
+    border-radius: 8px; /* Bordes redondeados */
     padding: 1rem;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transicion suave */
+}
+
+.deal:hover {
+    transform: translateY(-4px); /* Eleva la tarjeta al pasar el cursor */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
 }
 
 /* Estilos para la imagen dentro de una tarjeta de oferta */
@@ -81,12 +102,13 @@ button:hover {
 /* Estilos para el título del juego en la tarjeta */
 .deal h3 {
     margin: 0 0 0.5rem 0;
+    color: #000; 
 }
 
 /* Estilos para el listado de precio en la tarjeta*/
 .deal p {
     margin: 0;
-    color: #007bff;
+    color: #000; 
     font-weight: bold;
 }
 

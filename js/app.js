@@ -5,13 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultsContainer = document.getElementById('results');
 
     // Evento de 'submit' para el formulario de búsqueda.
-    searchForm.addEventListener('submit', async (e) => { e.preventDefault(); // Evita que el formulario se envie de la manera tradicional.
+    searchForm.addEventListener('submit', async (e) => { //Este evento se disparara una vez se hace clic en un boton de de Buscar o presiona la tecla Enter
+        e.preventDefault(); // Evita que el formulario se envie de la manera tradicional.
         const gameTitle = gameTitleInput.value.trim(); 
         if (gameTitle === '') {
             return; 
         }
 
-        resultsContainer.innerHTML = '<p>Buscando ofertas...</p>'; 
+        resultsContainer.innerHTML = '<p class="loading-message">...Buscando ofertas...</p>'; 
         const deals = await searchDeals(gameTitle); // Busca ofertas
         displayDeals(deals); // Ofertas encontradas
     });
@@ -87,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function displayDeals(deals) {
         resultsContainer.innerHTML = ''; // Limpia los resultados anteriores
         if (deals.length === 0) {
-            resultsContainer.innerHTML = '<p>No se encontraron ofertas para este juego.</p>';
+            resultsContainer.innerHTML = '<p class="no-found-message">No se encontraron ofertas para este juego.</p>';
             return;
         }
 
